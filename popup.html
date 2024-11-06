@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Life Website Blocker</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 400px;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 16px;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+      input,
+      button {
+        margin: 5px 0;
+        width: 100%;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+      }
+
+      .inputContainer {
+        margin: 4px 0;
+        display: flex;
+        width: 100%;
+        gap: 4px;
+      }
+
+      input {
+        all: unset;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        background: #fff;
+        font-size: 0.9rem;
+        width: 100%;
+      }
+
+      button {
+        all: unset;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        background: #eee;
+        margin: 0;
+        font-size: 0.9rem;
+        text-wrap: nowrap;
+      }
+
+      #websiteList {
+        all: unset;
+        background: #eee;
+        border-radius: 4px;
+        padding: 4px;
+        width: calc(100% - 8px);
+        display: block;
+      }
+
+      li {
+        padding: 0 8px;
+      }
+
+      .removeButton {
+        width: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Happy Life Website Blocker ❤️‍🔥</h2>
+      <div class="inputContainer">
+        <input
+          type="text"
+          id="newWebsite"
+          placeholder="Enter website to block (e.g., example.com)"
+        />
+        <button id="addWebsite">Add Website</button>
+      </div>
+      <h3>Blocked Websites:</h3>
+      <ul id="websiteList">
+        <li>eb.dk<button class="removeButton">Remove</button></li>
+      </ul>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
