@@ -4,7 +4,10 @@ function isBlocked(url) {
       const blockedWebsites = result.blockedWebsites || [];
       const hostname = new URL(url).hostname;
       resolve(
-        blockedWebsites.some((blockedSite) => hostname.includes(blockedSite))
+        blockedWebsites.some(
+          (blockedSite) =>
+            hostname === blockedSite || hostname.endsWith(`.${blockedSite}`)
+        )
       );
     });
   });

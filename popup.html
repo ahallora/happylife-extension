@@ -85,18 +85,17 @@
   <body>
     <div class="container">
       <h2>Happy Life Website Blocker ❤️‍🔥</h2>
-      <div class="inputContainer">
+      <form class="inputContainer" id="addWebsiteForm">
         <input
           type="text"
           id="newWebsite"
           placeholder="Enter website to block (e.g., example.com)"
         />
-        <button id="addWebsite">Add Website</button>
-      </div>
+        <button type="submit">Add Website</button>
+      </form>
+
       <h3>Blocked Websites:</h3>
-      <ul id="websiteList">
-        <li>eb.dk<button class="removeButton">Remove</button></li>
-      </ul>
+      <ul id="websiteList"></ul>
     </div>
     <script src="popup.js"></script>
   </body>
